@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search">
+
+    <LinearLayout
+        android:orientation = "vertical"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:gravity="center_horizontal"
+        >
+
+        <LinearLayout
+            android:orientation = "horizontal"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:gravity = "center"
+            android:layout_marginTop="10px"
+            android:background="@null"
+            android:layout_weight = "0.1"
+            >
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="home"
+                android:background="@null"
+                app:srcCompat="@drawable/fz" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation = "horizontal"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:gravity = "center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_weight = "1"
+        >
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Search name or number"
+        android:inputType="textPersonName"
+        android:gravity = "bottom"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="70dp" />
+
+    <Button
+        android:id="@+id/bSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:onClick="search"
+        android:text="@android:string/search_go"
+        android:textColor="#fff"
+        android:backgroundTint="@color/colorPrimary"
+        android:background="@drawable/button_style"
+        android:layout_marginLeft="15dp"
+        tools:layout_editor_absoluteX="274dp"
+        tools:layout_editor_absoluteY="69dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation = "vertical"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:gravity = "center_horizontal"
+        android:layout_marginTop="10px"
+        android:layout_marginRight="30px"
+        android:layout_marginLeft="30px"
+        android:layout_weight = "1"
+        >
+
+        <LinearLayout
+            android:orientation = "horizontal"
+            android:layout_width = "350dp"
+            android:layout_height = "wrap_content"
+            android:gravity = "center_horizontal"
+            android:layout_marginTop="50px"
+            android:layout_weight = "1"
+            >
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Name: "
+                android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/etResultName"
+            android:layout_width = "200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation = "horizontal"
+            android:layout_width = "350dp"
+            android:layout_height = "wrap_content"
+            android:gravity = "center_horizontal"
+            android:layout_marginTop="50px"
+            android:layout_weight = "1"
+            >
+
+            <TextView
+                android:id="@+id/tvNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Number: "
+                android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etResultNumber"
+            android:layout_width = "200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPassword|phone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation = "horizontal"
+            android:layout_width = "350dp"
+            android:layout_height = "wrap_content"
+            android:gravity = "center_horizontal"
+            android:layout_marginTop="50px"
+            android:layout_weight = "1"
+            >
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Email:"
+                android:textSize="20dp"  />
+
+
+        <EditText
+            android:id="@+id/etResultEmail"
+            android:layout_width = "200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textWebEmailAddress" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation = "horizontal"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:gravity = "center_horizontal"
+        android:layout_marginTop="10px"
+        android:layout_weight = "3"
+        >
+
+    <LinearLayout
+        android:orientation = "vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:onClick="Edit"
+            android:background="#F7D12E"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/edituser" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:clickable="false"
+            android:layout_marginRight="15dp"
+            android:text="Update Details"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:orientation = "vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:onClick="delete"
+            android:background="#EF6237"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/unfollow" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:clickable="false"
+                android:layout_marginLeft="15dp"
+                android:text="Remove Friend"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
